@@ -1,0 +1,40 @@
+class MyException extends Exception
+{
+	public MyException(String s)
+    {
+    	super(s);
+    }
+}
+
+class Demo
+{
+	public static void main(String args[])
+    {
+    	int i = 100;
+        int arr[] = new int[5];
+        System.out.println("before division");
+        System.out.println();
+        try
+        {
+        	int res = 78/i;
+            System.out.println(res);
+            System.out.println(arr[4]);
+            if(res==0)
+            	throw new MyException("this is my exception / improper");
+        }
+        catch(ArithmeticException e)
+        {
+        	System.out.println("ArithmeticException");
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+        	System.out.println("ArrayIndexOutOfBoundsException");
+        }
+        catch(Exception e)
+        {
+        	System.out.println("default exception : " + e);
+        }
+        System.out.println();
+        System.out.println("after division");
+    }
+}

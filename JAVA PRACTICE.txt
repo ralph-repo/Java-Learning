@@ -1,0 +1,160 @@
+class demo
+{
+	public static void main(String args[])
+    {
+    	String name = new String("Captain");
+        name = name + " Anuj";
+        System.out.println("Good Morning " + name);
+        
+        StringBuffer sbuffer = new StringBuffer("Major");
+        System.out.println(sbuffer.capacity());
+        System.out.println(sbuffer.length());
+        
+        sbuffer.append(" Vivek");
+        System.out.println("Good Morning " + sbuffer);
+        
+        String str = sbuffer.toString();
+        
+        sbuffer.deleteCharAt(3);
+        System.out.println("Good Morning " + sbuffer);
+        
+        System.out.println("Good Morning " + str);
+        str.replaceFirst("j", "g");
+        System.out.println("Good Morning " + str);
+        
+        sbuffer.ensureCapacity(100);
+        System.out.println(sbuffer.capacity());
+        
+        sbuffer.append(" Jacob");
+        System.out.println("Good Morning " + sbuffer);
+        System.out.println(sbuffer.capacity());
+        
+        sbuffer.insert(3, "o");
+        System.out.println("Good Morning " + sbuffer);
+        
+        sbuffer.append(" Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,");
+        
+        System.out.println("Good Morning " + sbuffer);
+        System.out.println(sbuffer.capacity());
+    }
+}
+
+
+class Mobile
+{
+	static String name;
+    int price;
+    String brand;
+    
+    public void show()
+    {
+    	System.out.println("Name: " + name + " Price: " + price + " Brand: " 							+ brand);
+    }
+    public static void showStat(Mobile m)
+    {
+    	System.out.println("Name: " + name + " Price: " + m.price + " Brand: " + m.brand);
+    }
+}
+
+class demo
+{
+	public static void main(String args[])
+    {
+    	Mobile m1 = new Mobile();
+        m1.name = "Smart-Phone";
+        m1.price = 10000;
+        m1.brand = "Apple";
+        
+        Mobile m2 = new Mobile();
+        m2.name = "Flip-Phone";
+        m2.price = 5000;
+        m2.brand = "Nokia";
+        
+        m1.show();
+        m2.show();
+        System.out.println();
+        
+        Mobile.name = "Keypad";
+        m1.show();
+        m2.show();
+        System.out.println();
+        Mobile.showStat(m1);
+    }
+}
+
+
+class Human
+{
+	private int age;
+    private String name;
+    
+    public Human()
+    {
+    	age = 12;
+        name = "kid";
+    	System.out.println("in Constructor");
+    }
+    public Human(int age, String name)
+    {
+    	this.age = age;
+        this.name = name;
+    }
+    public void setAge(int a)
+    {
+    	age = a;
+    }
+    public void setName(String naam)
+    {
+    	name = naam;
+    }
+    public int getAge()
+    {
+    	return age;
+    }
+    public String getName()
+    {
+    	return name;
+    }
+}
+
+class Demo
+{
+	public static void main(String args[])
+    {
+    	Human obj1 = new Human();
+        // obj1.setAge(67);
+        // obj1.setName("Rett. Major General");
+        System.out.println(obj1.getName() + " : " + obj1.getAge());
+        Human obj2 = new Human(23, "Student");
+        // obj2.setAge(37);
+        // obj2.setName("On-Duty Major");
+        System.out.println(obj2.getName() + " : " + obj2.getAge());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

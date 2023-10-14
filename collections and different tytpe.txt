@@ -1,0 +1,82 @@
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
+  	System.out.println("collection type arraylist");
+    Collection<Integer> col = new ArrayList<Integer>();
+    col.add(4);
+    col.add(2);
+    col.add(8);
+    col.add(5);
+    col.add(7);
+    System.out.println(col);
+    
+    for(int n : col)
+    {
+    	System.out.println(n);
+    }
+    System.out.println();
+    System.out.println("list type arraylist");
+    List<Integer> nums = new ArrayList<Integer>();
+    nums.add(4);
+    nums.add(2);
+    nums.add(8);
+    nums.add(5);
+    nums.add(7);
+    System.out.println(nums);
+    
+    for(int n : nums)
+    {
+    	System.out.println(n);
+    }
+    System.out.println();
+    System.out.println("set type HashSet");
+    Set<Integer> num = new HashSet<Integer>();
+    num.add(45);
+    num.add(24);
+    num.add(83);
+    num.add(57);
+    num.add(72);
+    num.add(71);
+    System.out.println(num);
+    
+    for(int n : num)
+    {
+    	System.out.println(n);
+    }
+    System.out.println();
+    System.out.println("set type TreeSet");
+    Set<Integer> numSetTree = new TreeSet<Integer>();
+    numSetTree.add(45);
+    numSetTree.add(24);
+    numSetTree.add(83);
+    numSetTree.add(57);
+    numSetTree.add(72);
+    numSetTree.add(71);
+    System.out.println(numSetTree);
+    
+    for(int n : numSetTree)
+    {
+    	System.out.println(n);
+    }
+    System.out.println();
+    System.out.println("map type hashMap");
+    Map<String, Integer> stud = new HashMap<String, Integer>();
+    stud.put("Colonel", 100);
+    stud.put("Major", 96);
+    stud.put("Brigadier", 135);
+    stud.put("Captain", 85);
+    
+    System.out.println(stud);
+    System.out.println(stud.get("Major"));
+    
+    Set<String> name = new HashSet();
+    name = stud.keySet();
+    
+    for(String key : name)
+    {
+    	System.out.println("key -> " + key + ": value -> " + stud.get(key));
+    }
+    
+    
+  }
+}

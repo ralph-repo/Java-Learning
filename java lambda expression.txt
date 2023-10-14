@@ -1,0 +1,41 @@
+@FunctionalInterface
+interface A
+{
+	int show(int i,  int j);
+}
+
+//class B implements A
+//{
+//	public void show()
+//    {
+//    	System.out.println("in B show");
+//    }
+//}
+
+public class Main {
+  public static void main(String[] args) {
+  //for showing how lambdaexppression codes
+    // System.out.println("Hello World!");
+    //A obj = (int i) -> System.out.println("in anonymous class show : " + i);
+    //obj.show(6);
+    
+    //same thing as down code
+    //A obj = new A()
+    //{
+    //	public int show(int i, int j)
+    //    {
+    //    	return i+j;
+    //    }
+    //};
+    //int res = obj.show(4, 5);
+    //System.out.println(res);
+    
+    
+    //same thing as upper code
+    A obj = (i, j) -> i+j;
+
+    int res = obj.show(4, 5);
+    System.out.println(res);
+    System.out.println("representation of lambda expression");
+  }
+}

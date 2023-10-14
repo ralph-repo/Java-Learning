@@ -1,0 +1,88 @@
+import java.util.*;
+import java.lang.*;
+
+public class Main {
+  public static void main(String[] args) {
+  	
+    Map<String, Integer> week = new TreeMap<String, Integer>();
+    week.put("SUN", 1);
+    week.put("MON", 2);
+    week.put("TUE", 3);
+    week.put("WED", 4);
+    week.put("THU", 5);
+    week.put("FRI", 6);
+    week.put("SAT", 7);
+    
+    System.out.println(week);
+    
+    for(String key : week.keySet()){
+    	System.out.println(key + " : " + week.get(key));
+    }
+    
+    for(Map.Entry<String, Integer> day : week.entrySet()){
+    	System.out.println(day);
+    }
+    
+  	// Set<String> set = new LinkedHashSet<String>();
+    // set.add("Ravi");
+    // set.add("Vijay");
+  	// set.add("Ravi");
+    // set.add("AJ");
+    // set.add("PK");
+    // set.add("RY");
+    // set.add("pRAKASHG");
+    // set.add("Ac");
+    // set.add("rk");
+  	// 
+    // Iterator<String> itr = set.iterator();
+    // while(itr.hasNext()){
+    // 	System.out.println(itr.next());
+    // }
+    
+    // List<String> week = new ArrayList<String>();
+    // week.add("SUN");
+    // week.add("MON");
+    // week.add("TUE");
+    // week.add("WED");
+    // week.add("THU");
+    // week.add("FRI");
+    // week.add("SAT");
+    // 
+    // for(String s:week){
+    // 	System.out.println(s);
+    // }
+    
+  	// int x=1, i=2;
+    // do{
+    // 	x*=i;
+    // }while(++i<=3);
+    // System.out.println(x);
+    
+    // int y,p;
+    // for(int x=1;x<=3;x++){
+    // 	for(y=1;y<=2;y++){
+    //     	p = x*y;
+    //         System.out.println(p);
+    //     }
+    //     System.out.println( );
+    // }
+    
+    // char ch;
+    // int x = 97;
+    // do {
+    // 	ch = (char) x;
+    //     System.out.println(ch + " ");
+    //     if(x%10 == 0){
+    //     	break;
+    //     }
+    //     ++x;
+    // }while(x <= 100);
+    
+    // int x=1;
+    // int y=1;
+    // while(x<=y){
+    // 	y=y/x;
+    //     System.out.println(y);
+    // }   
+  }
+}
